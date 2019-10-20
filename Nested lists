@@ -1,0 +1,7 @@
+nlist=[]
+for _ in range(int(input())):
+    nlist.append((input() ,float(input())))
+s=sorted(list(set([i[1] for i in nlist])))
+min2=s[1]
+flist=[i[0] for i in nlist if i[1]==min2]
+print(*sorted(flist),sep="\n")
