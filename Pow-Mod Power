@@ -1,0 +1,4 @@
+a,b,m=int(input()),int(input()),int(input())
+pow=a**b
+print(pow)
+print(pow%m)
