@@ -1,0 +1,4 @@
+n=int(input())
+ar=list(set(map(int,input().split())))
+ar.sort()#sort in asscending order
+print(ar[-2]) #pick the second one from last 
