@@ -1,0 +1,2 @@
+firstname,lastname=input(),input()
+print("Hello {} {}! You just delved into python.".format(firstname,lastname))
