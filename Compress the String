@@ -1,0 +1,20 @@
+from itertools import groupby
+data=list(input())
+group=[]
+keys=[]
+lk=[]
+key=""
+count=0;index=-1
+for i in data:
+    if i==key:
+        group[index]+=1
+    else:
+        index+=1
+        if index>0:
+              lk.append((keys[index-1],group[index-1]))
+        group.append(1)
+        keys.append(i)
+        key=i
+lk.append((keys[index],group[index]))
+for (i,j) in lk:
+    print("({}, {})".format(j,i),end=" ")
