@@ -1,0 +1,3 @@
+from cmath import polar
+(r,p)=polar(complex(input()))
+print(r,p,sep="\n")
