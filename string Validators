@@ -1,0 +1,14 @@
+s=input()
+alpha=digit=lower=alnum=upper=False
+for i in s:
+    if not alnum:
+        alnum=i.isalnum()
+    if not alpha:
+        alpha=i.isalpha()
+    if not digit:
+        digit=i.isdigit()
+    if not lower:
+        lower=i.islower()
+    if not upper:
+        upper=i.isupper()
+print(alnum,alpha,digit,lower,upper,sep="\n")
