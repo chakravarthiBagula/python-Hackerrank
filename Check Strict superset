@@ -1,0 +1,8 @@
+ar=set(map(int,input().split()))
+for _ in range(int(input())):
+    s=set(map(int,input().split()))
+    if not s.issubset(ar) and len(ar)>len(s):
+        print("False")
+        break
+else:
+    print ("True")
