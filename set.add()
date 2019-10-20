@@ -1,0 +1,6 @@
+if __name__=="__main__":
+    n=int(input())
+    country_names=set()
+    for _ in range(n):
+        country_names.add(input())
+    print(len(country_names))
