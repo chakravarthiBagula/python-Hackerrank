@@ -1,0 +1,10 @@
+if __name__=="__main__":
+    n=int(input())
+    s=set(map(int,input().split()))
+    k=int(input())
+    for _ in range(k):
+        line=input().split()
+        se=set(map(int,input().split()))
+        exec('s.'+line[0]+'('+str(se)+')')
+    print(sum(s))
+    
