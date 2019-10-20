@@ -1,0 +1,10 @@
+def merge_the_tools(string,k):
+    for i in range(0,len(string),k):
+        word=string[i:i+k]
+        res=""
+        for i in word:
+            if i not in res:
+                res+=i
+        print(res)
+ s,k=input(),int(input())
+ merge_the_tools(s,k)
