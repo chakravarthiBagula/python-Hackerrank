@@ -1,0 +1,5 @@
+def isleaf(n):
+    return (n%4==0) and(n%100!=0) and (n%400==0)
+print(isleaf(int(input()))
+"""Another method lambda function"""
+print((lambda n:n%4==0 and (n%100!=0 or n%400==0))(int(input())))
