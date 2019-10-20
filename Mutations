@@ -1,0 +1,4 @@
+name=input()
+pk=input().split()
+p,k=int(pk[0]),pk[1]
+print(name[:p-1]+k+name[p:])
