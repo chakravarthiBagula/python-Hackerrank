@@ -1,0 +1,6 @@
+string,max_width=input(),int(input())
+list=[]
+while string:
+    list.append(string[0:max_width])
+    string=string[max_width::]
+print("\n".join(list))
