@@ -1,0 +1,16 @@
+def print_rangoli(n):
+       w=n+3*(n-1)
+       l=[]
+       for i in range(n,0,-1):
+           if len(l)==0:l.append(chr(96+i))  
+           else:
+               l.insert(len(l)//2,chr(96+i))
+               l.insert(len(l)//2-1,chr(96+i+1))
+           print("-"*((w-len("-".join(l)))//2)+"-".join(l)+"-"*((w-len("-".join(l)))//2))
+       for i in range(1,n):
+           l[len(l)//2]=chr(i+1+96)
+           l.pop(len(l)//2-1)
+           l.pop(len(l)//2)
+           print("-"*((w-len("-".join(l)))//2)+"-".join(l)+"-"*((w-len("-".join(l)))//2))
+n = int(input())
+print_rangoli(n)
