@@ -1,0 +1,6 @@
+for _  in range(int(input())):
+    a=int(input())
+    as1=set(map(int,input().split()))
+    b=int(input())
+    bs=set(map(int,input().split()))
+    print(as1.issubset(bs))
