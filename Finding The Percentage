@@ -1,0 +1,7 @@
+reports={}
+for _ in range(int(input())):
+   line=input().split()
+   reports[line[0]]=list(map(eval,line[1:]))
+query=input()
+if query in reports:
+    print("%.2f"%(sum(reports[query])/len(reports[query])))
