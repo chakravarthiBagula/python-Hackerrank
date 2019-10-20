@@ -1,0 +1,7 @@
+def average(arr):
+    arr=set(arr)
+    return sum(arr)/len(arr)
+n = int(input())
+arr = list(map(int, input().split()))
+result = average(arr)
+print(result)
