@@ -1,0 +1,13 @@
+n=int(input())
+li=[]
+for i in range(n):
+    qu=input().split()
+    if len(qu)==1 and qu[0]!='print':
+        query='li.'+qu[0]+'()'
+    elif qu[0]=='print':
+        query=qu[0]+'(li)'
+    elif len(qu)==2 :
+         query="li."+qu[0]+'('+qu[-1]+')'
+    elif len(qu)==3:
+         query="li."+qu[0]+'('+qu[1]+','+qu[2]+')'
+    exec(query)
