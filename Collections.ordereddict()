@@ -1,0 +1,12 @@
+n=int(input())
+item=[]
+cost=[]
+for i in range(n):
+    raw=input()
+    itemname,price=raw[:len(raw)-1-len(raw.split()[-1])],int(raw.split()[-1])
+    if itemname not in item:
+        cost.append(0)
+        item.append(itemname)
+    cost[item.index(itemname)]+=price
+for i ,j in zip(item,cost):
+    print(i,j)
