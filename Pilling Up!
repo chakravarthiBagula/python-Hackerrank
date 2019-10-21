@@ -1,0 +1,12 @@
+for _ in range(int(input())):
+    n=int(input())
+    cubes=list(map(int,input().split()))
+    start1=cubes.pop(0) if cubes[0]>=cubes[-1] else cubes.pop(-1)
+    while len(cubes)>0:
+          start=cubes.pop(0) if cubes[0]>=cubes[-1] else cubes.pop(-1)
+          if start<=start1:start1=start
+          else:
+              print("No")
+              break
+    if len(cubes)==0:
+        print("Yes")
