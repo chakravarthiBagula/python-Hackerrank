@@ -1,0 +1,13 @@
+s=input()
+d={i:s.count(i) for i in set(s)}
+l=[[i,j] for i,j in d.items()]
+for i in range(3):
+    max=l[0]
+    for j in range(len(l)):
+         if max[1]<l[j][1]:
+             max=l[j]
+         elif max[1]==l[j][1]:
+             if max[0]>l[j][0]:
+                 max=l[j]
+    l.remove(max)
+    print(*max,sep=" ")
