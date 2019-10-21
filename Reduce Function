@@ -1,0 +1,7 @@
+"""You Have to complete only the given function
+   so i posted that function only"""
+
+
+def product(fracs):
+    fracs=reduce(lambda x,y:Fraction(x.numerator,x.denominator)*Fraction(y.numerator,y.denominator),fracs)
+    return fracs.numerator,fracs.denominator
