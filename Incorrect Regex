@@ -1,0 +1,10 @@
+n=int(input())
+import re
+for i in range(n):
+    s=input()
+    try:
+        re.compile(s)
+        is_regex=True
+    except re.error:
+        is_regex=False
+    print(is_regex)
