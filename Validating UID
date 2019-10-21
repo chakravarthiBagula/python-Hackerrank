@@ -1,0 +1,5 @@
+for _ in range(int(input())):
+    x=input()
+    if sum([x.count(chr(i)) for i in range(65,90)])>=2 and sum([x.count(str(i)) for i in range(0,10)])>=3 and len(set(x))==len(x) and len(x)==10:
+        print("Valid")
+    else:print("Invalid")
