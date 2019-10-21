@@ -1,0 +1,10 @@
+for _ in range(int(input())):
+    Y=input()
+    if "-" in Y:
+        x=Y.split("-")
+        valid=all(i.isdigit() and len(i)==4 for i in x) and len(x)==4 and all(str(i)*4 not in "".join(x) for i in range(0,10)) 
+    else:
+        x=Y
+        valid=(len(x)==16 and x.isdigit() and all(str(i)*4 not in x for i in range(0,10)) )
+    if valid and any(Y.startswith(i) for i in "456"):print("Valid")
+    else:print("Invalid")
