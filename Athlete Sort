@@ -1,0 +1,13 @@
+n,m=map(int,input().split())
+myList=[]
+for i in range(n):
+    myList.append(list(map(int,input().split())))
+k=int(input())
+for i in range(len(myList)-1):
+    for j in range(len(myList)-1-i):
+        if (myList[j][k]>myList[j+1][k]):
+            myList[j] ,myList[j+1]=myList[j+1] ,myList[j]
+for i in myList:
+    for j in i:
+        print(j,end=" ")
+    print()
