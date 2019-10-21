@@ -1,0 +1,13 @@
+def fun(email):
+    if "@" in email and "." in email:
+        username,website,extension=email[:email.index("@")],email[email.index("@")+1:email.index(".")],email[email.index(".")+1:]
+        return username and all(i in "_-" or i.isalnum() for i in username) and all( i.isalnum() for i in website) and len(extension)<=3
+    return False  
+def filter_mails(emails):
+    return list(filter(fun,emails))
+if __name__ =='__main__':
+    emails=[]
+    for _ in range(int(input())):
+        emails.append(input())
+filtered_emails=filter_mails(emails)
+print(sorted(filtered_emails))
