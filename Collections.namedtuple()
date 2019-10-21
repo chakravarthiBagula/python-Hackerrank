@@ -1,0 +1,4 @@
+n=int(input())
+k=input().split().index("MARKS")
+x=[int(input().split()[k]) for i in range(n)]
+print(format(sum(x)/len(x),".2f"))
