@@ -1,0 +1,14 @@
+s=input()
+lower=[]
+upper=[]
+digit_odd=[]
+digit_even=[]
+for i in s:
+    try:
+        i=int(i)
+        if i%2==0:digit_even.append(str(i))
+        else:digit_odd.append(str(i))
+    except:
+       if i.isupper():upper.append(i)
+       elif i.islower():lower.append(i)
+print("".join(sorted(lower))+"".join(sorted(upper))+"".join(sorted(digit_odd))+"".join(sorted(digit_even)))
