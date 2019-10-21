@@ -1,0 +1,2 @@
+x,ans=map(int,input().split())
+print(eval(input().replace('x',str(x)))==ans)
