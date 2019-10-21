@@ -1,0 +1,7 @@
+from collections import deque
+d=deque()
+for i in range(int(input())):
+    query=input().split()
+    ex="d."+query[0]+"("+query[-1]+")" if len(query)>1    else "d."+query[0]+"()"
+    exec(ex)
+print(*d,sep=" ")
