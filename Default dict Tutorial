@@ -1,0 +1,14 @@
+n,m=map(int,input().split())
+d={}
+for i in range(1,n+1):
+    ch=input()
+    if ch not in d:
+        d[ch]=[]
+    d[ch].append(i)
+for i in range(m):
+    ch=input()
+    if ch in d:
+        print(*d[ch],sep=" ")
+    else:
+        print("-1")
+
