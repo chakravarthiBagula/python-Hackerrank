@@ -1,0 +1,6 @@
+n,s=map(int,input().split())
+report=[0 for i in range(n)]
+for i in range(s):
+    report=list(map(sum,zip(report,list(map(float,input().split())))))
+for i in report:
+    print(i/s)
