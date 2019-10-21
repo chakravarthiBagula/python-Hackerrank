@@ -1,0 +1,11 @@
+n=int(input())
+myList=list(map(int,input().split()))
+count=0
+n=int(input())
+for i in range(n):
+    s,c=map(int,input().split())
+    if s in myList:
+        myList.remove(s)
+        count+=c
+print(count)
+
