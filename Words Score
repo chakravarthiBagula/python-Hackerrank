@@ -1,0 +1,10 @@
+def score_words(words):
+    score=0
+    for word in words:
+        if not sum((word.count(i) for i in "aeiouy"))%2:
+            score+=2
+        else:
+            score+=1
+    return score
+N=int(input())
+print(score_words(input().split()))
