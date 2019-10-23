@@ -1,0 +1,5 @@
+import numpy as np
+ar=np.array( list(map(int,input().split())) )
+br=np.array( list(map(int,input().split()) ))
+print(np.inner(ar,br))
+print(np.outer(ar,br))
