@@ -1,0 +1,5 @@
+import numpy as np
+N,M,P=map(int,input().split())
+NA=[list(map(int,input().split())) for i in range(N)]
+MA=[list(map(int,input().split())) for i in range(M)]
+print(np.concatenate((np.array(NA),np.array(MA))))
