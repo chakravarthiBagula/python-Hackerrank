@@ -1,0 +1,5 @@
+import numpy
+
+numpy.set_printoptions(sign=' ')
+m,n=map(int,input().split())
+print(numpy.eye(m,n))
