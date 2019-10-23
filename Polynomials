@@ -1,0 +1,3 @@
+import numpy as np
+ar=np.array( list(map(float,input().split())) )
+print(np.polyval(ar,int(input())))
