@@ -4,4 +4,4 @@
 
 def product(fracs):
     fracs=reduce(lambda x,y:Fraction(x.numerator,x.denominator)*Fraction(y.numerator,y.denominator),fracs)
-    return fracs.numerator,fracs.denominator
+    return (fracs.numerator,fracs.denominator)
