@@ -1,7 +1,7 @@
-# python-Hackerrank
+# python-Hackerrank Solutions
 
-Here we provided the solutions for challenges
-in python HackerRank
+Here are  my solutions for challenges
+in  HackerRank Python
 
 You can search through the challenge name 
 
