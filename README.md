@@ -1,9 +1,6 @@
 # python-Hackerrank
 
-Here we provided the solutions for challenges
-in python HackerRank
+Here I provided the solutions for challenges
+in python HackerRank in My Version
 
-You can search through the challenge name 
-
-Hope you like it 
 
